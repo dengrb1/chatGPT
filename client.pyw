@@ -1,11 +1,12 @@
 import os
 import platform
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import messagebox
 
 # Define constants
 CURRENT_DIR = os.getcwd()
 FILE_ERROR = '文件丢失，请检查文件内容并重新安装'
+system = platform.system()
 
 # Define functions
 def open_exe(exe_name):
@@ -47,10 +48,11 @@ bt_f1 = tk.Button(root, text='f1网站', command=f1)
 bt_update = tk.Button(root, text='更新日志', command=update)
 quit_bt = tk.Button(root, text='退出', command=quit_exe)
 
-bt_w.pack()
-bt_e.pack()
-bt_f1.pack()
-bt_update.pack()
-quit_bt.pack()
+bt_w.pack(side=tk.TOP, pady=5)
+bt_e.pack(side=tk.TOP, pady=5)
+bt_f1.pack(side=tk.TOP, pady=5)
+bt_update.pack(side=tk.TOP, pady=5)
+quit_bt.pack(side=tk.BOTTOM)
 
+# mainloop
 root.mainloop()
