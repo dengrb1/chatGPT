@@ -11,40 +11,40 @@ flie_error = '文件丢失，请检查文件内容并重新安装'
 
 
 def extkj():
-    if os.path.exists("{ml}\chatGPT_web\extkj.exe"):
-        os.system('start {ml}\chatGPT_web\extkj.exe')
+    if os.path.exists("{ml}\extkj.exe"):
+        os.system('start {ml}\extkj.exe')
     else:
         messagebox.showerror('system', flie_error)
         pass
     pass
 
 def wuguokai():
-    if os.path.exists("{ml}\chatGPT_web\wuguokai.exe"):
-        os.system("start {ml}\chatGPT_web\wuguokai.exe")
+    if os.path.exists("{ml}\wuguokai.exe"):
+        os.system("start {ml}\wuguokai.exe")
     else:
         messagebox.showerror('system', flie_error)
         pass
     pass
 
 def f1():
-    if os.path.exists("{ml}\chatGPT_web\\f1.exe"):
-        os.system("start {ml}\chatGPT_web\\f1.exe")
+    if os.path.exists("{ml}\\f1.exe"):
+        os.system("start {ml}\\f1.exe")
     else:
         messagebox.showerror('system', flie_error)
         pass
     pass
 
 def lbb():
-    if os.path.exists("{ml}\chatGPT_web\lbb.exe"):
-        os.system("start {ml}\chatGPT_web\lbb.exe")
+    if os.path.exists("{ml}\lbb.exe"):
+        os.system("start {ml}\lbb.exe")
     else:
         messagebox.showerror('system', flie_error)
         pass
     pass
 
 def update():
-    if os.path.exists("{ml}\system\\update.exe"):
-        os.system("start {ml}\system\\update.exe")
+    if os.path.exists("{ml}\update.exe"):
+        os.system("start {ml}\update.exe")
     else:
         messagebox.showerror('update', '更新日志文件丢失，请检查文件并重新安装')
         pass
