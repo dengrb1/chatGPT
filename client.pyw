@@ -43,8 +43,8 @@ def lbb():
     pass
 
 def update():
-    if os.path.exists("{ml}\update.exe"):
-        os.system("start {ml}\update.exe")
+    if os.path.exists("{ml}\\update.exe"):
+        os.system("start {ml}\\update.exe")
     else:
         messagebox.showerror('update', '更新日志文件丢失，请检查文件并重新安装')
         pass
