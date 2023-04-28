@@ -1,30 +1,16 @@
-from PyQt5.QtCore import QUrl
-from PyQt5.QtWidgets import QApplication, QMainWindow, QAction
-from PyQt5.QtWebEngineWidgets import QWebEngineView
+import tkinter as tk
+from tkinter import messagebox
 
-class Browser(QMainWindow):
-    def __init__(self):
-        super().__init__()
+def quit_exe():
+    root.destroy()
 
-        # Create QWebEngineView widget
-        self.browser = QWebEngineView()
-        self.setCentralWidget(self.browser)
+root = tk.Tk()
+root.title('Error 422')
+root.geometry('100x100')
 
-        # Create QAction widget for refresh button
-        refresh_action = QAction('Refresh', self)
-        refresh_action.triggered.connect(self.browser.reload)
-        self.toolbar = self.addToolBar('Refresh')
-        self.toolbar.addAction(refresh_action)
+messagebox.showerror('System', '别看了，已经废弃了')
 
-        # Load website
-        self.browser.setUrl(QUrl('https://link.lbbai.com'))
+btn_quit = tk.Button(root, text='退出', command=quit_exe)
+btn_quit.pack()
 
-        # Set window properties
-        self.setWindowTitle('LBBai Browser')
-        self.setGeometry(0, 0, 800, 600)
-        self.show()
-
-if __name__ == '__main__':
-    app = QApplication([])
-    window = Browser()
-    app.exec_()
+root.mainloop() 
