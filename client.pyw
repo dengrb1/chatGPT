@@ -35,12 +35,7 @@ def f1():
     pass
 
 def lbb():
-    if os.path.exists("{ml}\chatGPT_web\lbb.exe"):
-        os.system("start {ml}\chatGPT_web\lbb.exe")
-    else:
-        messagebox.showerror('system', flie_error)
-        pass
-    pass
+    messagebox.showerror('system', '无法使用，已废弃')
 
 def update():
     if os.path.exists("{ml}\system\\update.exe"):
