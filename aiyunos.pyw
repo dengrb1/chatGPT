@@ -8,9 +8,9 @@ class BrowserWindow(QMainWindow):
         self.setWindowTitle("AI Browser")
         self.setGeometry(100, 100, 800, 600)
 
-        # Create the QWebEngineView widget and set the URL to "https://chat.aiyunos.top"
+        # Create the QWebEngineView widget
         self.web_view = QWebEngineView(self)
-        self.web_view.load(QUrl("https://chat.aiyunos.top"))
+        self.web_view.load(QUrl("https://chat2.aitianhu.top"))
         self.setCentralWidget(self.web_view)
 
         # Create the QToolBar widget and add a QAction for the refresh button
