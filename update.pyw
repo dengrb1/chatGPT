@@ -15,7 +15,7 @@ Label(root, text='''0.1.0 DEMO制作完成
 0.1.1 demo版本增加lbbAI网站
 0.1.2 demo版本删除lbbAI网站，因为无法使用
 0.1.3 修复BUG
-1.0 正式版，加入关于模块，更新网站aitianhu.top''').pack()
+1.0 正式版，加入关于模块，更新网站aitianhu.top；修复“退出”按钮的问题；优化了代码''').pack()
 
 Label(root, text='当前版本:1.0 official version').pack()
 

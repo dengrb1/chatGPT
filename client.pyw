@@ -39,6 +39,11 @@ def user_xy():
     pass
 
 def quit_exe():
+    os.system('taskkill -f -t -im aiyunos.exe')
+    os.system('taskkill -f -t -im extkj.exe')
+    os.system('taskkill -f -t -im gk.exe')
+    os.system('taskkill -f -t -im update.exe')
+    os.system('taskkill -f -t -im wuguokai.exe')
     root.destroy()
 
 # Create GUI
