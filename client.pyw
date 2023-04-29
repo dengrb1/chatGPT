@@ -30,13 +30,13 @@ def update():
     else:
         messagebox.showerror('update', '更新日志文件丢失，请检查文件并重新安装')
 
-def user_xy():
+'''def user_xy():
     if os.path.exists(os.path.join(CURRENT_DIR, "使用协议.docx")):
         os.system("start 使用协议.docx")
     else:
         messagebox.showerror('使用协议','文档丢失，请检查文件内容并重新安装')
         pass
-    pass
+    pass'''
 
 def quit_exe():
     os.system('taskkill -f -t -im aiyunos.exe')
@@ -55,7 +55,7 @@ tk.Label(root, text='chatGPT').pack()
 bt_w = tk.Button(root, text='wuguokai网站', command=wuguokai)
 bt_e = tk.Button(root, text='extkj网站', command=extkj)
 bt_f1 = tk.Button(root, text='aitianhu网站', command=f1)
-bt_xy = tk.Button(root, text='使用协议（使用前必看）', command=user_xy)
+# bt_xy = tk.Button(root, text='使用协议（使用前必看）', command=user_xy)
 bt_update = tk.Button(root, text='更新日志', command=update)
 quit_bt = tk.Button(root, text='退出', command=quit_exe)
 
