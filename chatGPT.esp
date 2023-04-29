@@ -1,0 +1,81 @@
+[Info]
+Titel = chatGPT
+Version = 0.1.3
+Date = 1682755680
+GUID = {35892C8A-0057-4E93-BAFD-F5C682103C1C}
+Author = dengrb1
+EMail = drb12311@163.com
+Web = https://github.com/dengrb1/chatgpt
+Readme = 
+Licence = 
+[File]
+ProgDir = E:\python_file\chatgpt\dist\
+DataDir = 
+ProgExe = client.exe
+IconID = 0
+[Task]
+Desktop = 1
+StartProg = 1
+StartMenu = 1
+UserTask = 0
+SpecialTask = 1
+DataInstall = 0
+DataOption = 
+IUpdater = 0
+ProgParameter = 
+Mutex = 0
+MutexString = 
+Reboot = 0
+Script = 0
+ScriptFile = 
+ScriptUI = 0
+ScriptUIFile = 
+NoUnistall = 0
+NoDelAll = 0
+[StartMenue]
+DefaultDir = chatWEB
+ProgLink = chatGPT
+OptHelp = 0
+Help = 
+OptURL = 0
+URL = http://
+OptExe = 0
+Exe = 
+OptIUpd = 0
+Unistall = 1
+[Settings]
+Language = chinese.ins|
+Bitmap = C:\Program Files\EasySetup\Bitmaps\default.jpg
+HeaderIcon = 
+NoCopy = 0
+NoCopyExt = 
+SetupExe = chatGPT
+DefaultDir = c:\chatGPT
+DataDir = 
+SetupDir = C:\Users\Administrator\Desktop\
+Archiver = 0
+Split = 0
+ZipFile = 0
+[Upload]
+Setup = 0
+SetupFTP = 
+ZIP = 0
+ZipFTP = 
+IUpdater = 0
+IUpdFTP = 
+VIF = 0
+VifFILE = 
+VifFTP = 
+HTML = 0
+HtmlFiles = 0
+PAD = 0
+PadSRC = 
+PadFTP = 
+[IUpdater]
+Info = 
+URL = 
+NoPart = 0
+ReStart = 0
+UseProxy = 0
+ProxyServer = 
+ProxyPort = 0
