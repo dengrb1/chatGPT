@@ -11,11 +11,9 @@ error = 0
 def file_jx(exe_name):
     maths += 1
     if os.path.exists(os.path.join(ml, f"{exe_name}")):
-        print(f'文件{maths}正常存在')
+        pass
     else:
         error += 1
-        print(f"丢失{error}文件")
-        pass
     pass
 
 def extkj():
