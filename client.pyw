@@ -3,6 +3,7 @@ import platform
 import tkinter as tk
 from tkinter import messagebox
 from time import sleep
+import sys
 
 # Define constants
 CURRENT_DIR = os.getcwd()
@@ -37,7 +38,7 @@ def quit_exe():
     os.system('taskkill -f -t -im gk.exe')
     os.system('taskkill -f -t -im update.exe')
     os.system('taskkill -f -t -im wuguokai.exe')
-    root.destroy()
+    sys.exit()
 
 def gk():
     open_exe("gk")
