@@ -48,11 +48,12 @@ def quit_exe():
     root.destroy()
 
 def file_jc():
-    if os.path.exists(os.path.join(CURRENT_DIR, "if_file.exe")):
-        os.system('start if_file.exe')
+    if os.path.exists(os.path.join(CURRENT_DIR, "jc.exe")):
+        os.system('start jc.exe')
     else:
         messagebox.showerror('sittings', '系统文件丢失，程序出现错误！')
-        sleep(1)
+        sleep(0.5)
+        messagebox.showerror('error','程序出现问题，已经崩溃，错误代码:jc_not_system_file')
         quit_exe()
     pass
 
