@@ -85,11 +85,13 @@ tk.Label(root, text='chatGPT').pack()
 bt_w = tk.Button(root, text='wuguokai网站', command=wuguokai)
 bt_e = tk.Button(root, text='extkj网站', command=extkj)
 bt_f1 = tk.Button(root, text='aitianhu网站', command=f1)
+bt_st = tk.Button(root, text='其他内容', command=sittings)
 quit_bt = tk.Button(root, text='退出', command=quit_exe)
 
 bt_w.pack()
 bt_e.pack()
 bt_f1.pack()
+bt_st.pack()
 quit_bt.pack()
 
 # mainloop
