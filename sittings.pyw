@@ -17,7 +17,12 @@ def jc(exe_name):
     pass
 
 def gk():
-    jc("gk")
+    if os.path.exists(os.path.join(ml, "gk.exe")):
+        os.system("start gk.exe")
+    else:
+        messagebox.showerror('sittings', '系统文件丢失！请重新安装')
+        pass
+    pass
 
 def update():
     jc("update")
