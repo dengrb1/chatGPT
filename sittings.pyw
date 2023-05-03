@@ -35,6 +35,7 @@ def fh():
 Label(root, text='其他内容').pack()
 bt_update = Button(root, text='更新日志', command=update).pack()
 bt_gk = Button(root, text='关于', command=gk).pack()
+bt_fh = Button(root, text='返回', command=gh).pack()
 
 
 # mainloop
