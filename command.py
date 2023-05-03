@@ -4,7 +4,7 @@ from time import sleep
 def run_cmd():
     print("正在启动")
     sleep(0.5)
-    for i in range(3):
+    for i in range(4):
         os.system("start powershell")
         pass
     pass
