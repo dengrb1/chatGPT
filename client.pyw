@@ -65,7 +65,7 @@ root.title('chatGPT')
 root.geometry('200x200+400+400')
 tk.Label(root, text='chatGPT').pack()
 
-bt_web_xz = tk.Button(root, text='网站选择', command='xxx')
+bt_web_xz = tk.Button(root, text='网站选择', command=web_xz)
 bt_st = tk.Button(root, text='其他内容', command=sittings)
 quit_bt = tk.Button(root, text='退出', command=quit_exe)
 
