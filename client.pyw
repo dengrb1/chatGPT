@@ -45,7 +45,7 @@ def sittings():
     st = tk.Tk()
     bt_update = tk.Button(st, text='更新日志', command=update)
     bt_gk = tk.Button(st, text='关于', command=gk)
-    bt_jc = tk.Button(root, text='检测文件完整度', command=jc)
+    bt_jc = tk.Button(st, text='检测文件完整度', command=jc)
     # pack
     bt_jc.pack()
     bt_update.pack()
@@ -66,7 +66,7 @@ bt_web_xz = tk.Button(root, text='网站选择', command='xxx')
 bt_st = tk.Button(root, text='其他内容', command=sittings)
 quit_bt = tk.Button(root, text='退出', command=quit_exe)
 
-
+bt_web_xz.pack()
 bt_st.pack()
 quit_bt.pack()
 
