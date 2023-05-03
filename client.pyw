@@ -31,7 +31,10 @@ def update():
     open_exe("update")
 
 def quit_exe():
-    open_exe('taskkill')
+    os.system('taskkill -f -t -im aiyunos.exe')
+    os.system('taskkill -f -t -im wuguokai.exe')
+    os.system('taskkill -f -t -im extkj.exe')
+    os.system('taskkill -f -t -im python.exe')
     sys.exit()
 
 def jc():
