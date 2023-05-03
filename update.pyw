@@ -19,7 +19,7 @@ Label(root, text='''0.1.0 DEMO制作完成
 的问题
 1.0.1 修复BUG：移除“检查文件完整度”程序使用
 （可以在github仓库的old文件夹里面看；修复其他BUG......
-1.1 修复BUG;紧急修复Windows7无法使用情况! ''').pack()
+1.1 修复BUG;紧急修复Windows7无法使用情况!；重新修正UI界面 ''').pack()
 
 Label(root, text='当前版本:1.1 (Not beta or demo)').pack()
 
