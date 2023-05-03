@@ -31,7 +31,7 @@ def update():
     open_exe("update")
 
 def quit_exe():
-    open_cmd('taskkill')
+    open_exe('taskkill')
     sys.exit()
 
 def jc():
