@@ -32,7 +32,7 @@ def fh():
 
 
 # Button
-bt_wuguokai = Button(root, text='wuguokai网站')
+bt_wuguokai = Button(root, text='wuguokai网站', command=wuguokai)
 bt_extkj = Button(root, text='extkj网站', command=extkj)
 bt_f1 = Button(root, text='aiyunos网站', command=f1)
 bt_lbbai = Button(root, text='lbbai网站', command=lbbai)

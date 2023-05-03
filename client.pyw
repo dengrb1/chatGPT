@@ -25,7 +25,7 @@ def open_cmd(cmd_name):
     pass
 
 def web_xz():
-    open_exe("xz_web.exe")
+    open_exe("xz_web1.exe")
 
 def update():
     open_exe("update")
