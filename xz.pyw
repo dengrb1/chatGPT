@@ -21,8 +21,8 @@ def extkj():
 def wuguokai():
     open_exe("wuguokai")
 
-def f1():
-    open_exe("aiyunos")
+def qdymys():
+    open_exe("qdymys")
 
 def lbbai():
     webbrowser.open("https://link.lbbai.com")
@@ -34,7 +34,7 @@ def fh():
 # Button
 bt_wuguokai = Button(root, text='wuguokai网站', command=wuguokai)
 bt_extkj = Button(root, text='extkj网站', command=extkj)
-bt_f1 = Button(root, text='aiyunos网站', command=f1)
+bt_qdymys = Button(root, text='qdymys网站', command=qdymys)
 bt_lbbai = Button(root, text='lbbai网站', command=lbbai)
 bt_fh = Button(root, text='返回', command=fh)
 
@@ -42,7 +42,7 @@ bt_fh = Button(root, text='返回', command=fh)
 Label(root, text='选择界面').pack()
 bt_wuguokai.pack()
 bt_extkj.pack()
-bt_f1.pack()
+bt_qdymys.pack()
 bt_lbbai.pack()
 bt_fh.pack()
 

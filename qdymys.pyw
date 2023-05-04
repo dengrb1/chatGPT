@@ -10,7 +10,7 @@ class BrowserWindow(QMainWindow):
 
         # Create the QWebEngineView widget
         self.web_view = QWebEngineView(self)
-        self.web_view.load(QUrl("https://chat2.aitianhu.top"))
+        self.web_view.load(QUrl("https://chatgpt.qdymys.cn/"))
         self.setCentralWidget(self.web_view)
 
         # Create the QToolBar widget and add a QAction for the refresh button
