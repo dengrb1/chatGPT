@@ -24,7 +24,7 @@ def wuguokai():
 def qdymys():
     open_exe("qdymys")
 
-def lbbai():
+def bnu120():
     open_exe('bnu120')
 
 def fh():
@@ -35,7 +35,7 @@ def fh():
 bt_wuguokai = Button(root, text='wuguokai网站', command=wuguokai)
 bt_extkj = Button(root, text='extkj网站', command=extkj)
 bt_qdymys = Button(root, text='qdymys网站', command=qdymys)
-bt_lbbai = Button(root, text='lbbai网站', command=lbbai)
+bt_lbbai = Button(root, text='bnu120网站', command=bnu120)
 bt_fh = Button(root, text='返回', command=fh)
 
 # pack and Label
