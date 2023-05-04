@@ -17,12 +17,7 @@ def jc(exe_name):
     pass
 
 def gk():
-    if os.path.exists(os.path.join(ml, "gk.exe")):
-        os.system("start gk.exe")
-    else:
-        messagebox.showerror('sittings', '系统文件丢失！请重新安装')
-        pass
-    pass
+    jc('gk')
 
 def update():
     jc("update")
@@ -35,7 +30,7 @@ def fh():
 Label(root, text='其他内容').pack()
 bt_update = Button(root, text='更新日志', command=update).pack()
 bt_gk = Button(root, text='关于', command=gk).pack()
-bt_fh = Button(root, text='返回', command=gh).pack()
+bt_fh = Button(root, text='返回', command=fh).pack()
 
 
 # mainloop
