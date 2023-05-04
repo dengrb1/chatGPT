@@ -17,7 +17,8 @@ text = '''0.1.0 DEMO制作完成
 1.0.1 修复BUG：移除“检查文件完整度”程序使用
 （可以在github仓库的old文件夹里面看；修复其他BUG......
 1.1 修复BUG;紧急修复Windows7无法使用情况!；重新修正UI界面
-1.1.1 更新chatGPT网站;修改update文本显示设置
+1.1.1 更新chatGPT网站;修改update文本显示设置。新增bnu120聊天网站
+移除lbbai网站入口
 
 当前版本:1.1 (Not beta or demo)'''
 
