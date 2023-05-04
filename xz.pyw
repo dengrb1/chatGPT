@@ -25,7 +25,7 @@ def qdymys():
     open_exe("qdymys")
 
 def lbbai():
-    webbrowser.open("https://link.lbbai.com")
+    open_exe('bnu120')
 
 def fh():
     root.destroy()
