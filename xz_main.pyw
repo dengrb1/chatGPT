@@ -20,7 +20,7 @@ def open_exe(exe_name):
 def chat():
     open_exe('xz_chat')
 def doc():
-    open_exe('xz_doc')
+    messagebox.showerror('ChatWEB', '暂时无法使用，请耐心等待......')
 def fh():
     root.destroy()
 
