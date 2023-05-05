@@ -1,6 +1,8 @@
 import socket
 from time import sleep
 import os
+import platform
+import sys
 
 
 def is_connected():
@@ -22,8 +24,14 @@ def open_exe(exe_name):
 
 # mainloop
 print('正在启动检测程序...')
+s = platform.system()
 sleep(0.22222)
-
+if s == "Windows":
+    pass
+else:
+    print("无法启动，不是Windows系统！！")
+    sleep(1)
+    sys.exit()
 if is_connected():
     print("网络已连接，正在启动主程序!!")
     sleep(0.33)
