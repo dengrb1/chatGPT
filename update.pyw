@@ -8,6 +8,7 @@ def quit_exe():
     root.destroy()
 def update_now():
     webbrowser.open("https://kgithub.com/dengrb1/chatgpt/releases/")
+    messagebox.showinfo('update', '请选择最新版本并下载运行安装程序，然后就可以更新了！')
 
 # Label
 update_now_bt = Button(root ,text='在线更新', command=update_now).pack(side=RIGHT)
