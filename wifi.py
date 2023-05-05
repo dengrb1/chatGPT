@@ -37,4 +37,20 @@ if is_connected():
     sleep(0.33)
     open_exe('client')
 else:
-    print("网络未连接,无法使用")
+    print("网络未连接,是否继续使用？")
+    input_xz = str(input("选择:1.是 2.不是(必须选择数字)"))
+    if input_xz == None:
+        print("没有输入")
+        sleep(0.5)
+        print("默认退出")
+        sleep(0.6)
+        sys.exit()
+        pass
+    elif input_xz != '1' or '2':
+        print("请输入数字！！")
+        pass
+    elif input_xz == '1':
+        open_exe('client')
+    elif input_xz == '2':
+        sleep(0.4)
+        sys.exit()
