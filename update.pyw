@@ -1,12 +1,17 @@
 from tkinter import *
 from tkinter.scrolledtext import ScrolledText
+import webbrowser
 
 root = Tk()
 
 def quit_exe():
     root.destroy()
+def update_now():
+    webbrowser.open("https://kgithub.com/dengrb1/chatgpt/releases/")
 
 # Label
+update_now_bt = Button(root ,text='在线更新', command=update_now).pack(side=RIGHT)
+quit_bt = Button(root, text='返回', command=quit_exe).pack(side=RIGHT)
 Label(root, text='更新日志').pack()
 text = '''0.1.0 DEMO制作完成
 0.1.1 demo版本增加lbbAI网站
@@ -19,6 +24,8 @@ text = '''0.1.0 DEMO制作完成
 1.1 修复BUG;紧急修复Windows7无法使用情况!；重新修正UI界面
 1.1.1 更新chatGPT网站;修改update文本显示设置。新增bnu120聊天网站
 移除lbbai网站入口
+
+
 
 当前版本:1.1 (Not beta or demo)'''
 
