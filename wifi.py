@@ -15,7 +15,7 @@ def is_connected():
     return False
 def open_exe(exe_name):
     ml = os.getcwd()
-    if os.path.exists(ml, f"{exe_name}.exe"):
+    if os.path.exists(os.path.join(ml, f"{exe_name}.exe")):
         os.system(f"start {exe_name}.exe")
     else:
         pass
