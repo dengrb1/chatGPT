@@ -5,6 +5,10 @@ import platform
 import sys
 
 
+ml = os.getcwd()
+s = platform.system()
+
+
 def is_connected():
     try:
         # 使用百度的IP地址进行连接测试
@@ -13,10 +17,9 @@ def is_connected():
     except OSError:
         pass
     return False
-def open_exe(exe_name):
-    ml = os.getcwd()
-    if os.path.exists(os.path.join(ml, f"{exe_name}.exe")):
-        os.system(f"start {exe_name}.exe")
+def open_exe():
+    if os.path.exists(os.path.join(ml, f"client.exe")):
+        os.system(f"start client.exe")
     else:
         print('文件丢失，请重新安装')
         sleep(1)
@@ -26,7 +29,6 @@ def open_exe(exe_name):
 
 # mainloop
 print('正在启动检测程序...')
-s = platform.system()
 sleep(0.22222)
 if s == "Windows":
     pass
@@ -37,7 +39,7 @@ else:
 if is_connected():
     print("网络已连接，正在启动主程序!!")
     sleep(0.33)
-    open_exe('client')
+    open_exe()
 else:
     print("网络未连接,是否继续使用？")
     input_xz = str(input("选择:1.是 2.不是(必须选择数字)"))
