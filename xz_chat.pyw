@@ -35,7 +35,6 @@ def open_exe(exe_name):
         os.system(f"start {exe_name}.exe")
     else:
         messagebox.showerror('system', file_error)
-
 def extkj():
     open_exe("extkj")
 def wuguokai():

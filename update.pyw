@@ -29,7 +29,7 @@ text = '''0.1.0 DEMO制作完成
 1.1 修复BUG;紧急修复Windows7无法使用情况!；重新修正UI界面
 1.1.1 更新chatGPT网站;修改update文本显示设置。新增bnu120聊天网站
 移除lbbai网站入口
-1.2 增加lbbai网站；修复BUG
+1.2 增加lbbai网站；修复BUG;完全移除“关于”模块......
 
 当前版本:1.2 (Not beta or demo)'''
 
