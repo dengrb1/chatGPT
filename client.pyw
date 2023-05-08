@@ -31,9 +31,12 @@ def update():
     open_exe("update")
 
 def quit_exe():
-    os.system('taskkill -f -t -im aiyunos.exe')
+    os.system('taskkill -f -t -im qdymys.exe')
     os.system('taskkill -f -t -im wuguokai.exe')
     os.system('taskkill -f -t -im extkj.exe')
+    os.system('taskkill -f -t -im bnu120.exe')
+    os.system('taskkill -f -t -im lbbai.exe')
+    os.system('taskkill -f -t -im chat_command.exe')
     os.system('taskkill -f -t -im python.exe')
     sys.exit()
 
