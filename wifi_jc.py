@@ -7,6 +7,8 @@ from time import sleep, strftime
 
 ml = os.getcwd()
 file_error = '文件丢失，请重新安装！！'
+ok_file = int(0)
+error_file = int(0)
 ERROR_MSG = '错误：'
 
 
@@ -41,6 +43,19 @@ def check_internet(url='http://www.baidu.com/', timeout=5):
             sleep(1.5)
         return False
 
+'''def open_exe(exe_name):
+    if os.path.exists(os.path.join(ml,f"{exe_name}.exe")):
+        ok_file += 1
+    else:
+        error_file += 1
+        pass
 
+def file_jc():
+    open_exe('bnu120')
+    open_exe('client')
+    open_exe('update')'''
+    
+
+# mainloop
 if __name__ == '__main__':
     check_internet()
