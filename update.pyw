@@ -30,8 +30,10 @@ text = '''0.1.0 DEMO制作完成
 1.1.1 更新chatGPT网站;修改update文本显示设置。新增bnu120聊天网站
 移除lbbai网站入口
 1.2 增加lbbai网站；修复BUG;完全移除“关于”模块......
+1.3 删除lbbai网站；增加xjai网站，里面内涵AI画图功能！；加入WiFi功能
+检测
 
-当前版本:1.2 (Not beta or demo)'''
+当前版本:1.3 (Not beta or demo)'''
 
 text_box = ScrolledText(root)
 text_box.pack(fill=BOTH, expand=1)

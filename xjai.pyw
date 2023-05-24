@@ -9,7 +9,7 @@ class Browser(QMainWindow):
         self.setWindowTitle('浏览器')
         
         self.browser = QWebEngineView()
-        self.browser.setUrl(QUrl('https://link.lbbai.com'))
+        self.browser.setUrl(QUrl('https://home.xjai.cc'))
         self.setCentralWidget(self.browser)
         
         refresh_button = QAction('刷新', self)

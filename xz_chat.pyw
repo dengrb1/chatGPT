@@ -43,8 +43,8 @@ def qdymys():
     open_exe("qdymys")
 def bnu120():
     open_exe('bnu120')
-def lbbai():
-    open_exe('lbbai')
+def xjai():
+    open_exe('xjai')
 def fh():
     root.destroy()
 
@@ -53,7 +53,7 @@ def fh():
 bt_wuguokai = Button(frame, text='wuguokai网站', command=wuguokai)
 bt_extkj = Button(frame, text='extkj网站', command=extkj)
 bt_qdymys = Button(frame, text='qdymys网站', command=qdymys)
-bt_lbbai = Button(frame, text='lbbai网站', command=lbbai)
+bt_xjai = Button(frame, text='xjai网站', command=xjai)
 bt_bnu120 = Button(frame, text='bnu120网站', command=bnu120)
 bt_fh = Button(frame, text='返回', command=fh)
 
@@ -61,7 +61,7 @@ bt_fh = Button(frame, text='返回', command=fh)
 Label(root, text='选择界面').pack()
 bt_wuguokai.pack()
 bt_extkj.pack()
-bt_lbbai.pack()
+bt_xjai.pack()
 bt_qdymys.pack()
 bt_bnu120.pack()
 bt_fh.pack()
