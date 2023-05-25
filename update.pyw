@@ -27,7 +27,7 @@ def downloads_update_now():
 
     if new_version != current_version:
         messagebox.showinfo('在线更新','发现新版本: {}'.format(new_version))
-        messagebox.showinfo('准备更新')
+        messagebox.showinfo('在线更新','准备更新')
 
         # 下载最新程序并保存到本地
         download_url = release_info['assets'][0]['browser_download_url']  # 假设发布包第一个asset为我们要下载的程序
@@ -42,7 +42,7 @@ def downloads_update_now():
             # 打开更新程序
             os.startfile(file_path)
     else:
-        print('当前已是最新版本')
+        messagebox.showinfo('在线更新','当前已是最新版本')
 
 # Label
 update_now_bt = Button(root ,text='在线更新', command=update_now).pack(side=RIGHT)
@@ -61,7 +61,7 @@ text = '''0.1.0 DEMO制作完成
 移除lbbai网站入口
 1.2 增加lbbai网站；修复BUG;完全移除“关于”模块......
 1.3 删除lbbai网站；增加xjai网站，里面内涵AI画图功能！；加入WiFi功能
-检测
+检测;加入在线更新功能
 
 当前版本:1.3 (Not beta or demo)'''
 
@@ -73,6 +73,7 @@ text_box.configure(state='disabled')
 
 # Button
 quit_bt = Button(root, text='返回', command=quit_exe).pack()
+update_now_bt = Button(root, text='在线更新')
 
 # mainloop
 root.title('更新日志')
