@@ -16,7 +16,9 @@ class Browser(QMainWindow):
         refresh_button.triggered.connect(self.browser.reload)
         self.toolbar = self.addToolBar('Refresh')
         self.toolbar.addAction(refresh_button)
+
         
+# mainloop
 app = QApplication(sys.argv)
 browser = Browser()
 browser.showMaximized()
