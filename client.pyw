@@ -33,7 +33,7 @@ def quit_exe():
     os.system('taskkill -f -t -im wuguokai.exe')
     os.system('taskkill -f -t -im extkj.exe')
     os.system('taskkill -f -t -im bnu120.exe')
-    os.system('taskkill -f -t -im xjai.exe')
+    os.system('taskkill -f -t -im 1chat.exe')
     os.system('taskkill -f -t -im chat_command.exe')
     os.system('taskkill -f -t -im sittings.exe')
     os.system('taskkill -f -t -im update.exe')
