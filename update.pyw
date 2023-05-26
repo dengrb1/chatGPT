@@ -43,7 +43,7 @@ text = '''
 1.1.1 更新chatGPT网站;修改update文本显示设置。新增bnu120聊天网站
 移除lbbai网站入口
 1.2 增加lbbai网站；修复BUG;完全移除“关于”模块......
-1.3 删除lbbai网站；增加xjai网站，里面内涵AI画图功能！；加入WiFi功能
+1.3 删除lbbai网站；增加aitianhu网站，里面内涵AI画图功能！；加入WiFi功能
 检测;加入在线更新功能
 '''
 
