@@ -1,6 +1,8 @@
 import requests
 import json
 import os
+from tqdm import tqdm
+import threading
 
 url = 'https://api.github.com/repos/dengrb1/chatgpt/releases/latest'
 
@@ -20,11 +22,34 @@ if new_version != current_version:
     file_path = os.path.join(os.getcwd(), file_name)
 
     print('开始下载：{}'.format(file_name))
-    response = requests.get(download_url)
-    with open(file_path, 'wb') as f:
-        f.write(response.content)
-        print('下载完成！')
-        # 打开更新程序
-        os.startfile(file_path)
+    response = requests.get(download_url, stream=True)
+    content_size = int(response.headers['Content-Length'])
+
+    def write_data(start, end, url, file_path):
+        headers = {'Range': f'bytes={start}-{end}', 'Accept-Encoding': None}
+        res = requests.get(url, headers=headers, stream=True)
+        with open(file_path, 'rb+') as f:
+            f.seek(start)
+            var = f.tell()
+            f.write(res.content)
+
+    thread_num = 10
+    threads = []
+    step = content_size // thread_num
+    for i in range(thread_num):
+        start = step * i
+        if i == thread_num -1:
+            end = content_size - 1
+        else:
+            end = (i+1) * step - 1
+        t = threading.Thread(target=write_data, kwargs={"start": start, "end": end, "url": download_url, "file_path": file_path})
+        threads.append(t)
+        t.start()
+    for t in threads:
+        t.join()
+
+    print('下载完成！')
+    # 打开更新程序
+    os.startfile(file_path)
 else:
     print('当前已是最新版本')
