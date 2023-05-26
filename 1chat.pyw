@@ -9,7 +9,7 @@ class Browser(QMainWindow):
         self.setWindowTitle('浏览器')
         
         self.browser = QWebEngineView()
-        self.browser.setUrl(QUrl('https://chat13.aitianhu.top'))
+        self.browser.setUrl(QUrl('https://1.1ai.fun/'))
         self.setCentralWidget(self.browser)
         
         refresh_button = QAction('刷新', self)
