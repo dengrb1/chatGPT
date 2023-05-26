@@ -28,7 +28,10 @@ def downloads_update_now():
 update_now_bt = Button(root ,text='在线更新', command=update_now).pack(side=RIGHT)
 quit_bt = Button(root, text='返回', command=quit_exe).pack(side=RIGHT)
 Label(root, text='更新日志').pack()
-text = '''0.1.0 DEMO制作完成
+text = '''
+当前版本:1.3 (Not beta or demo)
+
+0.1.0 DEMO制作完成
 0.1.1 demo版本增加lbbAI网站
 0.1.2 demo版本删除lbbAI网站，因为无法使用
 0.1.3 修复BUG
@@ -42,8 +45,7 @@ text = '''0.1.0 DEMO制作完成
 1.2 增加lbbai网站；修复BUG;完全移除“关于”模块......
 1.3 删除lbbai网站；增加xjai网站，里面内涵AI画图功能！；加入WiFi功能
 检测;加入在线更新功能
-
-当前版本:1.3 (Not beta or demo)'''
+'''
 
 text_box = ScrolledText(root)
 text_box.pack(fill=BOTH, expand=1)
