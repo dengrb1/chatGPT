@@ -3,6 +3,11 @@ import json
 import os
 from tqdm import tqdm
 import threading
+from time import sleep
+
+
+print('在使用在线更新时，请安装steam++加速github才可以加速下载')
+sleep(1)
 
 url = 'https://api.github.com/repos/dengrb1/chatgpt/releases/latest'
 
