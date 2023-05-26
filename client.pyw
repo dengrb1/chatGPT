@@ -37,6 +37,8 @@ def quit_exe():
     os.system('taskkill -f -t -im chat_command.exe')
     os.system('taskkill -f -t -im sittings.exe')
     os.system('taskkill -f -t -im update.exe')
+    os.system('taskkill -f -t -im xz_chat.exe')
+    os.system('taskkill -f -t -im xz_main.exe')
     os.system('taskkill -f -t -im python.exe')
     sys.exit()
 
@@ -75,6 +77,7 @@ quit_bt = Button(root, text='退出', command=quit_exe)
 bt_web_xz.pack()
 bt_st.pack()
 quit_bt.pack()
+Label(root,text='version 1.3 @2023-2024 dengrb1').pack()
 
 # mainloop
 root.mainloop()
