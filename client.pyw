@@ -39,7 +39,6 @@ def quit_exe():
     os.system('taskkill -f -t -im update.exe')
     os.system('taskkill -f -t -im xz_chat.exe')
     os.system('taskkill -f -t -im xz_main.exe')
-    os.system('taskkill -f -t -im python.exe')
     sys.exit()
 
 def jc():
@@ -49,20 +48,6 @@ def jc():
 def gk():
     open_exe("gk")
 
-def sittings():
-    st = Tk()
-    bt_update = Button(st, text='更新日志', command=update)
-    bt_gk = Button(st, text='关于', command=gk)
-    bt_jc = Button(st, text='检测文件完整度', command=jc)
-    # pack
-    bt_jc.pack()
-    bt_update.pack()
-    bt_gk.pack()
-    # mainloop
-    st.title('设置')
-    st.geometry("200x200+400+600")
-    st.mainloop()
-
 
 # Create GUI
 root = Tk()
@@ -71,11 +56,10 @@ root.geometry('200x200+400+400')
 Label(root, text='chatGPT').pack()
 
 bt_web_xz = Button(root, text='网站选择', command=web_xz)
-bt_st = Button(root, text='其他内容', command=sittings)
 quit_bt = Button(root, text='退出', command=quit_exe)
 
+Label(root, text='chatWEB')
 bt_web_xz.pack()
-bt_st.pack()
 quit_bt.pack()
 Label(root,text='version 1.3 @2023-2024 dengrb1').pack()
 
