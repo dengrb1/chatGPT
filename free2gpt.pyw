@@ -5,12 +5,12 @@ from PyQt5.QtWebEngineWidgets import QWebEngineView
 class BrowserWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Chat Browser")
+        self.setWindowTitle("AI Browser")
         self.setGeometry(100, 100, 800, 600)
 
-        # Create the QWebEngineView widget and set the URL to "https://chat.extkj.cn"
+        # Create the QWebEngineView widget
         self.web_view = QWebEngineView(self)
-        self.web_view.load(QUrl("https://chat.extkj.cn"))
+        self.web_view.load(QUrl("https://chatc.free2gpt.xyz/"))
         self.setCentralWidget(self.web_view)
 
         # Create the QToolBar widget and add a QAction for the refresh button

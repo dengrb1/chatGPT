@@ -36,11 +36,11 @@ def open_exe(exe_name):
     else:
         messagebox.showerror('system', file_error)
 def extkj():
-    open_exe("extkj")
+    open_exe("aiyunos")
 def wuguokai():
     open_exe("wuguokai")
 def qdymys():
-    open_exe("qdymys")
+    open_exe("free2gpt")
 def bnu120():
     open_exe('bnu120')
 def xjai():

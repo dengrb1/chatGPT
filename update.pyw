@@ -45,6 +45,7 @@ text = '''
 1.2 增加lbbai网站；修复BUG;完全移除“关于”模块......
 1.3 删除lbbai网站；增加1chat网站，里面内涵AI画图功能！；加入WiFi功能
 检测;加入在线更新功能
+1.4 加入aiyunos网站；
 '''
 
 text_box = ScrolledText(root)
