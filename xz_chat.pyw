@@ -35,15 +35,15 @@ def open_exe(exe_name):
         os.system(f"start {exe_name}.exe")
     else:
         messagebox.showerror('system', file_error)
-def extkj():
+def aiyunos():
     open_exe("aiyunos")
 def wuguokai():
     open_exe("wuguokai")
-def qdymys():
-    open_exe("free2gpt")
+def chatkey():
+    open_exe("chatkey")
 def bnu120():
     open_exe('bnu120')
-def xjai():
+def free2gpt():
     open_exe('free2gpt')
 def fh():
     root.destroy()
@@ -51,18 +51,18 @@ def fh():
 
 # Button
 bt_wuguokai = Button(frame, text='wuguokai网站', command=wuguokai)
-bt_extkj = Button(frame, text='extkj网站', command=extkj)
-bt_qdymys = Button(frame, text='qdymys网站', command=qdymys)
-bt_xjai = Button(frame, text='xjai网站', command=xjai)
+bt_aiyunos = Button(frame, text='aiyunos网站', command=aiyunos)
+bt_chatkey = Button(frame, text='chatkey网站', command=chatkey)
+bt_free2gpt = Button(frame, text='free2gpt网站', command=free2gpt)
 bt_bnu120 = Button(frame, text='bnu120网站', command=bnu120)
 bt_fh = Button(frame, text='返回', command=fh)
 
 # pack and Label
 Label(root, text='选择界面').pack()
 bt_wuguokai.pack()
-bt_extkj.pack()
-bt_xjai.pack()
-bt_qdymys.pack()
+bt_aiyunos.pack()
+bt_free2gpt.pack()
+bt_chatkey.pack()
 bt_bnu120.pack()
 bt_fh.pack()
 
