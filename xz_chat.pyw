@@ -44,7 +44,7 @@ def qdymys():
 def bnu120():
     open_exe('bnu120')
 def xjai():
-    open_exe('xjai')
+    open_exe('free2gpt')
 def fh():
     root.destroy()
 
