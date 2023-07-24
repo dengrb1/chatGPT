@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from time import sleep
 import sys
+import webbrowser
 
 # Define constants
 CURRENT_DIR = os.getcwd()
@@ -42,9 +43,8 @@ def quit_exe():
     os.system('taskkill -f -t -im xz_main.exe')
     sys.exit()
 
-def gk():
-    open_exe("gk")
-
+def ol_web():
+    open_exe('ol_web')
 
 # Create GUI
 root = Tk()
@@ -53,10 +53,12 @@ root.geometry('200x200+400+400')
 Label(root, text='chatGPT').pack()
 
 bt_web_xz = Button(root, text='网站选择', command=web_xz)
+ol_web_b = Button(root ,text='官网', command=ol_web)
 quit_bt = Button(root, text='退出', command=quit_exe)
 
 Label(root, text='chatWEB')
 bt_web_xz.pack()
+ol_web_b.pack()
 quit_bt.pack()
 Label(root,text='version 1.4 @2023-2024 dengrb1').pack()
 
