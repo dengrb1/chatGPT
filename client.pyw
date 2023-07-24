@@ -7,6 +7,7 @@ import sys
 # Define constants
 CURRENT_DIR = os.getcwd()
 FILE_ERROR = '文件丢失，请检查文件内容并重新安装'
+task = f'taskkill -f -t -im '
 
 # Define functions
 def open_exe(exe_name):
@@ -29,9 +30,9 @@ def update():
     open_exe("update")
 
 def quit_exe():
-    os.system('taskkill -f -t -im qdymys.exe')
+    os.system('taskkill -f -t -im free2gpt.exe')
     os.system('taskkill -f -t -im wuguokai.exe')
-    os.system('taskkill -f -t -im extkj.exe')
+    os.system('taskkill -f -t -im chatkey.exe')
     os.system('taskkill -f -t -im bnu120.exe')
     os.system('taskkill -f -t -im 1chat.exe')
     os.system('taskkill -f -t -im chat_command.exe')
@@ -41,17 +42,13 @@ def quit_exe():
     os.system('taskkill -f -t -im xz_main.exe')
     sys.exit()
 
-def jc():
-    messagebox.showerror('system', '检测程序暂时无法使用！！！(应该以后都不会写完了......)')
-    pass
-
 def gk():
     open_exe("gk")
 
 
 # Create GUI
 root = Tk()
-root.title('chatGPT')
+root.title('chatWEB')
 root.geometry('200x200+400+400')
 Label(root, text='chatGPT').pack()
 
@@ -61,7 +58,7 @@ quit_bt = Button(root, text='退出', command=quit_exe)
 Label(root, text='chatWEB')
 bt_web_xz.pack()
 quit_bt.pack()
-Label(root,text='version 1.3 @2023-2024 dengrb1').pack()
+Label(root,text='version 1.4 @2023-2024 dengrb1').pack()
 
 # mainloop
 root.mainloop()
