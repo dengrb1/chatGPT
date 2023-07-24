@@ -68,6 +68,6 @@ bt_fh.pack()
 
 
 # mainloop
-root.title('选择')
+root.title('chatWEB')
 root.geometry('200x220+440+600')
 root.mainloop()

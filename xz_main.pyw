@@ -28,6 +28,6 @@ chat_b.pack()
 q_b.pack()
 
 # mainloop
-root.title('选择')
+root.title('chatWEB')
 root.geometry('200x220')
 root.mainloop()

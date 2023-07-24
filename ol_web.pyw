@@ -34,6 +34,6 @@ q_b.pack()
 
 
 # mainloop
-root.title('官网')
+root.title('chatWEB')
 root.geometry('200x220')
 root.mainloop()
