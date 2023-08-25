@@ -32,7 +32,7 @@ quit_bt = Button(root, text='返回', command=quit_exe).pack(side=RIGHT)
 Label(root, text='更新日志').pack()
 text = '''
 当前版本:1.3 (Not beta or demo)
-z
+
 
 1.3 加入aiyunos、free2gpt、chatkey网站；删除qdymys、extkj等网站；加入在程序内
 访问官网，加入cmd版本的chatGPT(测试版);修复一些很明显的BUG
