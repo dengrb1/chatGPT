@@ -45,6 +45,6 @@ fh_bt.grid(row=2,column=1)
 
 
 # mainloop
-root.title('chatGPT')
+root.title('chatWEB')
 root.geometry('200x250+100+100')
 root.mainloop()
