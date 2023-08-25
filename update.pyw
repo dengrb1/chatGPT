@@ -29,7 +29,7 @@ update_now_bt = Button(root ,text='在线更新', command=update_now).pack(side=
 quit_bt = Button(root, text='返回', command=quit_exe).pack(side=RIGHT)
 Label(root, text='更新日志').pack()
 text = '''
-当前版本:1.3 (Not beta or demo)
+当前版本:1.4 (Not beta or demo)
 
 0.1.0 DEMO制作完成
 0.1.1 demo版本增加lbbAI网站

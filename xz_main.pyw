@@ -20,9 +20,12 @@ def chat():
 def quit_exe():
     sys.exit()
 
+
+# Button
 chat_b = Button(root ,text='聊天网站', command=chat)
 q_b = Button(root ,text='返回', command= quit_exe)
 
+# pack Button and label
 Label(root, text='选择模式').pack()
 chat_b.pack()
 q_b.pack()

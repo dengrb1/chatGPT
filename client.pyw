@@ -10,7 +10,8 @@ CURRENT_DIR = os.getcwd()
 FILE_ERROR = '文件丢失，请检查文件内容并重新安装'
 task = f'taskkill -f -t -im '
 
-# Define functions
+''' Define functions
+程序文件检测'''
 def open_exe(exe_name):
     if os.path.exists(os.path.join(CURRENT_DIR, f"{exe_name}.exe")):
         os.system(f"start {exe_name}.exe")
@@ -41,9 +42,11 @@ def quit_exe():
     os.system('taskkill -f -t -im update.exe')
     os.system('taskkill -f -t -im xz_chat.exe')
     os.system('taskkill -f -t -im xz_main.exe')
+    os.system('taskkill -f -t -im ol_web.exe')
     sys.exit()
 
 def ol_web():
+    messagebox.showwarning("Warning","这个程序为测试版，如有问题，请马上反馈！")
     open_exe('ol_web')
 
 # Create GUI
@@ -53,7 +56,7 @@ root.geometry('200x200+400+400')
 Label(root, text='chatGPT').pack()
 
 bt_web_xz = Button(root, text='网站选择', command=web_xz)
-ol_web_b = Button(root ,text='官网', command=ol_web)
+ol_web_b = Button(root ,text='官方网站', command=ol_web)
 quit_bt = Button(root, text='退出', command=quit_exe)
 
 Label(root, text='chatWEB')
