@@ -31,13 +31,11 @@ update_now_bt = Button(root ,text='在线更新', command=update_now).pack(side=
 quit_bt = Button(root, text='返回', command=quit_exe).pack(side=RIGHT)
 Label(root, text='更新日志').pack()
 text = '''
-当前版本:1.4 (Not beta or demo)
+当前版本:1.3 (Not beta or demo)
+z
 
-1.4 加入aiyunos、free2gpt、chatkey网站；删除qdymys、extkj等网站；加入在程序内
+1.3 加入aiyunos、free2gpt、chatkey网站；删除qdymys、extkj等网站；加入在程序内
 访问官网，加入cmd版本的chatGPT(测试版);修复一些很明显的BUG
-
-1.3 删除lbbai网站；增加1chat网站，里面内涵AI画图功能！；加入WiFi功能
-检测;加入在线更新功能
 
 1.2 增加lbbai网站；修复BUG;完全移除“关于”模块......
 
