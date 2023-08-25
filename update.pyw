@@ -14,15 +14,16 @@ ml = os.getcwd()
 
 def quit_exe():
     root.destroy()
-'''def update_now():
+def update_now():
     webbrowser.open("https://kgithub.com/dengrb1/chatgpt/releases/")
     messagebox.showinfo('update', '请选择最新版本并下载运行安装程序，然后就可以更新了！')
-'''
-def downloads_update_now():
+'''def downloads_update_now():
     if os.path.exists(os.path.join(ml, "downloads_update_now.exe")):
         os.startfile("downloads_update_now")
+
     else:
         messagebox.showerror(':( error','在线更新模块错误：文件不存在')
+'''
 
 
 # Label
@@ -61,10 +62,9 @@ text_box.configure(state='disabled')
 
 # Button
 quit_bt = Button(root, text='返回', command=quit_exe).pack()
-update_now_bt = Button(root, text='在线更新', command=downloads_update_now).pack()
+update_now_bt = Button(root, text='在线更新', command=update_now).pack()
 
 # mainloop
 root.title('更新日志')
 root.geometry('355x250+400+400')
-downloads_update_now()
 root.mainloop()
